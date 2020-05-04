@@ -1,0 +1,123 @@
+*box{
+    box-sizing: border-box;
+}
+body{
+    background-color: chocolate;
+}
+content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+h1{
+    text-align: center;
+    font-size: 70px;
+}
+h3{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.content_1{
+    display: block;
+    position: relative;
+    width: 30%;
+    margin-left: 30px;
+    padding-left: 10px;
+    margin-top: 50px;
+    border: 2px solid black;
+    float: left;
+    background-color: darkgreen;
+}
+.chicken{
+    background-color: orange;
+}
+.content_2{
+    display: block;
+    width: 30%;
+    margin-left: 10px;
+    margin-top: 50px;
+    padding-left: 10px;
+    float: left;
+    border: 2px solid black;
+    background-color: red;
+}
+.beef{
+    background-color: gold;
+}
+.content_3{
+    display: block;
+    width: 30%;
+    margin-left: 10px;
+    padding-left: 10px;
+    margin-top: 50px;
+    float: left;
+    border: 2px solid black;
+    background-color: peru;
+}
+.sushi{
+    background-color: limegreen;
+}
+.chicken, .beef, .sushi{
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 80px;
+    float: right;
+    clear: left;
+    border-left:2px solid black ;
+    border-bottom:2px solid black  ;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+p{
+    clear: right;
+    font-size: 20px;
+}
+.content_1 section p, .content_2 section p,.content_3 section p{
+    margin-top: 15px;
+    padding-top: 15px;
+}
+@media (min-width:768px) and (max-width:991px){
+.content_1{
+        float: left;
+        width: 40%;
+        margin-left: 5%;
+    }
+.content_2{
+    float: right;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.content_3{
+    width: 88%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 60px;
+}
+}
+@media (max-width: 767px){
+    h1{
+        font-size: 40px;
+    }
+    .content_1{
+        float: left;
+        width: 80%;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    .content_2{
+        float: left;
+        width: 80%;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    .content_3{
+        float: left;
+        width: 80%;
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-bottom: 60px;
+    }
+}
